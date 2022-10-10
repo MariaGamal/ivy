@@ -219,7 +219,7 @@ The functions in this returned module are populated by iterating through the glo
            ivy_original_dict = ivy.__dict__.copy()
 
        # add the input backend to global stack
-       backend_stack.append(f)
+       backend_stack.append(backend)
 
        # iterate through original ivy.__dict__
        for k, v in ivy_original_dict.items():
